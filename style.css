@@ -51,6 +51,11 @@ body{
 .menu-izquierdo img,p{
     display: inline-block;
 }
+.ancle{
+    color: white;
+    outline: aliceblue;
+    cursor: pointer;
+}
 
 .menu-derecho{
     width: 700px;

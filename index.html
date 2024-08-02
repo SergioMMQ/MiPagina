@@ -17,23 +17,26 @@
                 <p id="correo"><a href="mailto:quetzal.mq97@gmail.com" class="ancle">quetzal.mq97@gmail.com</a></p>
                 <br>
                 <img src="iconos/whatsapp.png">
-                <p><a href="https://wa.me/525550538743?text=Me%20comunico%20con%20usted%20por%20el%20motivo">5550538743</a></p>
+                <p><a href="https://wa.me/525550538743?text=Me%20comunico%20con%20usted%20por%20el%20motivo" class="ancle">5550538743</a></p>
                 <br>
                 <img src="iconos/ubicacion.png">
-                <p><a href="https://www.google.com/maps/place/Ciudad+de+M%C3%A9xico,+CDMX/@19.3909832,-99.3084238,11z/data=!3m1!4b1!4m6!3m5!1s0x85ce0026db097507:0x54061076265ee841!8m2!3d19.4326077!4d-99.133208!16zL20vMDRzcWo?entry=ttu">Mexico, CDMX</a></p>
+                <p><a class="ancle" href="https://www.google.com/maps/place/Ciudad+de+M%C3%A9xico,+CDMX/@19.3909832,-99.3084238,11z/data=!3m1!4b1!4m6!3m5!1s0x85ce0026db097507:0x54061076265ee841!8m2!3d19.4326077!4d-99.133208!16zL20vMDRzcWo?entry=ttu">Mexico, CDMX</a></p>
                 <br>
                 <img src="iconos/linkendly.png">
-                <p><a href="https://www.linkedin.com/in/sergio-mart%C3%ADnez-8500961b4/">www.linkedin.com/in/<br>sergio-martínez-8500961b4</a></p>
+                <p><a class="ancle" href="https://www.linkedin.com/in/sergio-mart%C3%ADnez-8500961b4/">www.linkedin.com/in/<br>sergio-martínez-8500961b4</a></p>
             </div>
             <div class="menu-derecho">
+                
                 <div class="menu-seleccionable">
+                    <p></p>
                     <button onclick="btnSobreMi()"><h4>SOBRE MI</h4></button>
                     <button onclick="btnExperiencia()"><h4>EXPERIENCIA</h4></button>
                     <button onclick="btnPortafolio()"><h4>PORTAFOLIO</h4></button>
                     <button onclick="btnCertificados()"><h4>CERTIFICADOS</h4></button>
-                    <button><h4>CONTACTO</h4></button>
-                    
+                    <button><h4>RECOMENDACIONES</h4></button>
+                    <p></p>
                 </div>
+                
                 <div id="informacion">
                     <!--Sobre mi-->
                     <section id="sobre-mi">
@@ -54,7 +57,7 @@
                                 <h6>OCTUBRE 2022 - ACTUALIDAD</h6>
                             <ul>
                                 <li>Implementación de una CRM(Odoo). para trabajar de acuerdo a los procesos de la Empresa.</li>
-                                <li>Uso y manejo de CRM Odoo Enterprice.</li>
+                                <li>Capacitar sobre el uso y manejo de CRM Odoo Enterprice.</li>
                                 <li>Instalación de Odoo Comunity.</li>
                                 <li>Modificaciones de la CRM según lo requerido.</li>
                                 <li>Mejoras en los procesos de las diferentes áreas en la empresa.</li>
@@ -125,17 +128,41 @@
                         </div>
                     </section>
                     <!--portafolio-->
-                    <section id="portafolio">
-                        <button onclick="btnjuegodelahorcado()"><h3><span id="auno">*</span> Juego del ahorcado</h3></button>
-                        <button onclick="btnencriptador()"><h3 ><span id="ados">*</span> Encriptador</h3></button>
-                        
-                        <button onclick="btnnumsecreto()"><h3 ><span id="atres">*</span> Juego del numero secreto</h3></button>
-                        <button onclick="btnbarberia()"><h3 ><span id="acuatro">*</span> Barberia</h3></button>
-
-                        <button><h3 ><span>*</span> Java one</h3></button>
-                        <button><h3 ><span>*</span> Documentos Odoo</h3></button>
-                        <button><h3 ><span>*</span> Sistema Odoo</h3></button>
-                        <button><h3 ><span>*</span> Servicios de mantenimiento </h3></button>
+                    <section id="portafolio" >
+                        <div >    
+                            <div>
+                                <button onclick="btnjuegodelahorcado()"><h3><span id="auno">*</span> Juego del ahorcado</h3></button>
+                                <button onclick="btnencriptador()"><h3 ><span id="ados">*</span> Encriptador</h3></button>
+                                <button onclick="btnnumsecreto()"><h3 ><span id="atres">*</span> Juego del numero secreto</h3></button>
+                                <button onclick="btnbarberia()"><h3 ><span id="acuatro">*</span> Barberia</h3></button>
+                                <button><h3 ><span>*</span> Java one</h3></button>
+                                <button><h3 ><span>*</span> Documentos Odoo</h3></button>
+                                <button><h3 ><span>*</span> Sistema Odoo</h3></button>
+                                <button><h3 ><span>*</span> Servicios de mantenimiento </h3></button>
+                            </div>
+                            <div id="ahorcado">
+                                <img src="portafolio/a.png">
+                                <img src="portafolio/b.png">
+                                <img src="portafolio/c.png">
+                                <img src="portafolio/d.png">
+                            </div>
+                            <div id="encriptador">
+                                <h5><a href="https://sergiommq.github.io/encriptador-javascript/">ENCRIPTADOR</a></h5>
+                                <img src="portafolio/encriptador.png">
+                            </div>
+                            <div id="numsecreto">
+                                <h5><a href="https://sergiommq.github.io/juegosecreto/">JUEGO DEL NUMERO SECRETO</a></h5>
+                                <img src="portafolio/numsecreto.png">
+                            </div>
+                            <div id="barberia">
+                                <h5><a href="https://sergiommq.github.io/Barber-a-Alura-proyecto/">BARBERIA</a></h5>
+                                <img src="portafolio/barberia.png">
+                            </div>
+                            <div id="javaone"></div>
+                            <div id="docodoo"></div>
+                            <div id="sisodoo"></div>
+                            <div id="pagmantenimiento"></div>
+                        </div>
                     </section>
                     <!--certificados-->
                     <section id="certificados">
@@ -192,33 +219,12 @@
         
     </main>
     <section id="sec-muestra">
-        <div id="ahorcado">
-            <img src="portafolio/a.png">
-            <img src="portafolio/b.png">
-            <img src="portafolio/c.png">
-            <img src="portafolio/d.png">
-        </div>
-        <div id="encriptador">
-            <h2><a href="https://sergiommq.github.io/encriptador-javascript/">ENCRIPTADOR</a></h2>
-            <img src="portafolio/encriptador.png">
-        </div>
-        <div id="numsecreto">
-            <h2><a href="https://sergiommq.github.io/juegosecreto/">JUEGO DEL NUMERO SECRETO</a></h2>
-            <img src="portafolio/numsecreto.png" alt="">
-        </div>
-        <div id="barberia">
-            <h2><a href="https://sergiommq.github.io/Barber-a-Alura-proyecto/">BARBERIA</a></h2>
-            <img src="portafolio/barberia.png" alt="">
-        </div>
+        
+        
+        
+        
 
-        <div id="javaone">
-            </div>
-        <div id="docodoo">
-            </div>
-        <div id="sisodoo">
-            </div>
-        <div id="pagmantenimiento">
-            </div>
+        
     </section>
     <section id="sec-muestra-dos">
         <div id="certificados-img">

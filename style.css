@@ -1,29 +1,38 @@
-body{
-    background: linear-gradient(145deg, #5c7ddf, #9ab5ff);
-    background-repeat: no-repeat;
+main{
+    background: #9ab5ff;    
+    background-repeat: repeat;
     background-size: cover;
     color: rgb(235, 235, 235);
+    width: auto;
+    height: auto;
+    border: none;
 }
-
+body{
+    margin: 0px;
+    padding: 0px;
+}
 #menu{
     display: inline-flex;
-    padding: 5% 10%;
-    
+    padding: 5% 10%;    
 }
+
 .linea-titulo{
     border-bottom: 4px solid orange;
 }
+
 .linea-mayor{
     background: orange;
     width:150px;
     height: 3px;
     padding-top: 1px;
 }
+
 .linea{
     width: 250px;
     border-bottom: 2px solid orange;
     border-right: 2px solid orange;
-} 
+}
+
 .menu-izquierdo, .menu-derecho{    
     width: 300px;
     padding: 20px;
@@ -51,10 +60,17 @@ body{
 .menu-izquierdo img,p{
     display: inline-block;
 }
+
+
 .ancle{
     color: white;
-    outline: aliceblue;
     cursor: pointer;
+    text-decoration: none;
+}
+
+.ancle:hover{
+    color: #ff7300;
+    text-decoration: none;
 }
 
 .menu-derecho{
@@ -79,6 +95,13 @@ body{
     cursor: pointer;
 }
 
+
+.menu-seleccionable button :hover{
+    border-radius: 1em;
+    cursor: pointer;
+    background-color: #f97102;
+}
+
 .menu-seleccionable h4{
     color: rgb(235, 235, 235);
     padding: 5px;
@@ -90,7 +113,7 @@ body{
     display: block;
 }
 #sobre-mi h2{
-    margin: 25% 0;
+    margin: 50px 0;
 }
 #experiencia{
     margin: 5%;
@@ -116,70 +139,50 @@ body{
     cursor: pointer;
     text-decoration: underline #f3994fa7;
 }
-#sec-muestra, #sec-muestra-dos{
-    display: inline-flex;
-    padding: 0 10%;
+
+.btn-experiencia:hover{
+    color: #ff7300;
+    cursor: pointer;
 }
 
-#portafolio{
-    padding-left: 100px;
-    padding-top: 50px;
+#informacion #portafolio{
+    padding: 50px;
+    
 }
 
-#portafolio button{
+#portafolio div button{
     background: none;
     border: none;
     cursor: pointer;
-    display: block;
     color: rgb(235, 235, 235);
 }
 
-#ahorcado {
-    display: grid;
-    grid: repeat(2, 320px) / auto-flow 320px;
+#portafolio button:hover{
+    text-decoration: underline 2px #ff7300a7;
 }
 
 #ahorcado > img {
-    background-color: #8ca0ff;
-    width: 280px;
-    height: 280px;
+    width: 150px;
+    height: 150px;
 }
 
 #ahorcado, #encriptador, #numsecreto, #barberia{
-    width: 850px;
-    width: 850px;
-    padding: 100px;
-    height: 600px;
-    margin-right: 15px;
-    border-radius: 25px;
-    background: linear-gradient(145deg, #5c7ddf, #9ab5ff);
-    box-shadow:  0px 0px 30px #cbd9ff,
-             0px 0px 30px #cbd9ff;
+    width: auto;
     display: none;
 }
 
-
-#encriptador a{
-    width: 90%;
-}
 #encriptador img{
-    width: 90%;
+    width: 50%;
     display: inline;
 }
 
-#numsecreto a{
-    width: 90%;
-}
 #numsecreto img{
-    width: 90%;
+    width: 50%;
     display: inline;
 }
 
-#barberia a{
-    width: 90%;
-}
 #barberia img{
-    width: 90%;
+    width: 50%;
     display: inline;
 }
 
@@ -225,11 +228,16 @@ body{
     display: block;
     cursor: pointer;
 }
+
+#certificados button:hover{
+    color: #ff7300;
+}
+
 #certificados h5{
     padding: 0;
     margin-left: 50px;
-
 }
+
  #certificados {
     padding: 0;
     margin: 25px;
@@ -237,4 +245,25 @@ body{
 
 #certificados div{
     display: none;
+}
+
+
+@media screen and (max-width: 1180px) {
+    #menu{
+        display: block;
+    }
+
+    .menu-izquierdo{    
+        width: auto;
+        margin-bottom: 5%;
+        height: min-content;
+    }
+    .menu-derecho{    
+        width: auto;
+        margin-bottom: 10%;
+    }
+    #sobre-mi h2{
+        margin: 10%;
+        font-size: 14px;
+    }
 }

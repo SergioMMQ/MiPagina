@@ -10,6 +10,7 @@ main{
 body{
     margin: 0px;
     padding: 0px;
+    text-align: center;
 }
 #menu{
     display: inline-flex;
@@ -34,6 +35,7 @@ body{
 }
 
 .menu-izquierdo, .menu-derecho{    
+    text-align: left;
     width: 300px;
     padding: 20px;
     height: 600px;
@@ -47,7 +49,6 @@ body{
 #foto-perfil{
     width: 150px;
     border-radius: 150px;
-    margin: 0 25%;
     background-color: #9ab5ff;
     box-shadow:  0px 0px 10px #cbd9ff,
              0px 0px 10px #cbd9ff;
@@ -115,6 +116,7 @@ body{
 #sobre-mi h2{
     margin: 50px 0;
 }
+
 #experiencia{
     margin: 5%;
 }
@@ -186,37 +188,12 @@ body{
     display: inline;
 }
 
-#container {
-    display: grid;
-    grid: repeat(2, 320px) / auto-flow 290px;
-}
-
-#container > div img {
-    background-color: #8ca0ff;
-    width: 280px;
-    height: 280px;
-}
-#sec-muestra-dos{
-    display: none;
-}
-
-#certificados-img{
-    width: 850px;
-    width: 850px;
-    padding: 100px;
-    height: 600px;
-    margin-right: 15px;
-    border-radius: 25px;
-    background: linear-gradient(145deg, #5c7ddf, #9ab5ff);
-    box-shadow:  0px 0px 30px #cbd9ff,
-             0px 0px 30px #cbd9ff;
-}
-
 #certificados{
     text-align: left;
     padding-left: 80px;
     padding-top: 50px;
 }
+
 #certificados button{
     text-align: left;
     padding: 0;
@@ -238,17 +215,13 @@ body{
     margin-left: 50px;
 }
 
- #certificados {
-    padding: 0;
-    margin: 25px;
-}
+
 
 #certificados div{
     display: none;
 }
 
-
-@media screen and (max-width: 1180px) {
+@media only screen and (min-width: 320px) and (max-width: 1180px) {
     #menu{
         display: block;
     }
@@ -260,10 +233,29 @@ body{
     }
     .menu-derecho{    
         width: auto;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
+    }
+    .menu-seleccionable button{  
+        margin: 2px;
+
     }
     #sobre-mi h2{
         margin: 10%;
         font-size: 14px;
     }
+    
 }
+
+@media (max-width: 850px){
+    
+#menu-contacto{
+    display: none;
+}
+}
+
+@media (min-width: 850px){
+    
+    #contacto{
+        display: none;
+    }
+    }

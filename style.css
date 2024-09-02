@@ -114,12 +114,13 @@ body{
     display: block;
 }
 #sobre-mi h2{
-    margin: 50px 0;
+    margin: 50px 30px;
 }
 
 #experiencia{
     margin: 5%;
 }
+
 #experiencia div .sistemas{
     display: block;
     
@@ -168,7 +169,7 @@ body{
     height: 150px;
 }
 
-#ahorcado, #encriptador, #numsecreto, #barberia{
+#ahorcado, #encriptador, #numsecreto, #barberia, #spa{
     width: auto;
     display: none;
 }
@@ -184,6 +185,11 @@ body{
 }
 
 #barberia img{
+    width: 50%;
+    display: inline;
+}
+
+#spa img{
     width: 50%;
     display: inline;
 }
@@ -212,13 +218,22 @@ body{
 
 #certificados h5{
     padding: 0;
-    margin-left: 50px;
+    margin: 5px 0 0 50px;
 }
-
-
 
 #certificados div{
     display: none;
+}
+#recomendaciones div{
+    display: flex;
+    margin: 5% 0 0 10%;
+}
+#recomendaciones img{
+    width: 80px;
+    border-radius: 150px;
+}
+#recomendaciones div h6{
+    margin: 5px 20px ;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1180px) {
@@ -233,6 +248,7 @@ body{
     }
     .menu-derecho{    
         width: auto;
+        height: 700px;
         margin-bottom: 5%;
     }
     .menu-seleccionable button{  
@@ -240,8 +256,19 @@ body{
 
     }
     #sobre-mi h2{
-        margin: 10%;
+        margin: 5%;
         font-size: 14px;
+    }
+    #recomendaciones{
+        overflow-y: scroll;
+        height: 500px;
+        margin-top: 10%;
+        scrollbar-width: thin;
+    }
+    
+    #recomendaciones div{
+        display: inline;
+        margin: 0 0 0 0;
     }
     
 }

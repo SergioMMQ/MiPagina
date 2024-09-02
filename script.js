@@ -3,6 +3,7 @@ const sobreMi = document.querySelector('#sobre-mi')
 const experiencia = document.querySelector('#experiencia')
 const portafolio = document.querySelector('#portafolio')
 const certificados = document.querySelector('#certificados')
+const recomendaciones = document.querySelector('#recomendaciones')
 //mi-experiencia
 const tuno = document.querySelector('.tuno')
 const tdos = document.querySelector('.tdos')
@@ -14,7 +15,7 @@ const ahorcado = document.querySelector('#ahorcado')
 const encriptador = document.querySelector('#encriptador')
 const numsecreto = document.querySelector('#numsecreto')
 const barberia = document.querySelector('#barberia')
-const javaone = document.querySelector('#javaone')
+const spa = document.querySelector('#spa')
 const docodoo = document.querySelector('#docodoo')
 const sisodoo = document.querySelector('#sisodoo')
 const pagmantenimiento = document.querySelector('#pagmantenimiento')
@@ -29,6 +30,8 @@ const ccinco = document.querySelector('#ccinco')
 const cseis = document.querySelector('#cseis')
 const csiete = document.querySelector('#csiete')
 const cocho = document.querySelector('#cocho')
+// recomendaciones
+
 //asteriscos
 const auno = document.querySelector('#auno')
 const ados = document.querySelector('#ados')
@@ -41,7 +44,8 @@ function btnSobreMi(){
     experiencia.style.display = "none";
     portafolio.style.display = "none";
     certificados.style.display = "none";
-
+    recomendaciones.style.display = "none";
+    
     secmuestra.style.display = "none";
     secmuestrados.style.display = "none";
 }
@@ -50,6 +54,7 @@ function btnExperiencia(){
     experiencia.style.display = "block";
     portafolio.style.display = "none";
     certificados.style.display = "none";
+    recomendaciones.style.display = "none";
 
     secmuestra.style.display = "none"
     
@@ -59,6 +64,7 @@ function btnPortafolio(){
     experiencia.style.display = "none";
     portafolio.style.display = "block";
     certificados.style.display = "none";
+    recomendaciones.style.display = "none";
     
     secmuestra.style.display = "none";
 }
@@ -67,10 +73,23 @@ function btnCertificados(){
     experiencia.style.display = "none";
     portafolio.style.display = "none";
     certificados.style.display = "block";
+    recomendaciones.style.display = "none";
 
     secmuestra.style.display = "none";
     secmuestrados.style.display = "block";
 }
+
+function btnRecomendaciones(){
+    sobreMi.style.display = "none";
+    experiencia.style.display = "none";
+    portafolio.style.display = "none";
+    certificados.style.display = "none";
+    recomendaciones.style.display = "block";
+
+    secmuestra.style.display = "none";
+    secmuestrados.style.display = "block";
+}
+
 //botones experiencia
 function btnIngenieroEnSistemas(){
     tuno.style.display = "none";
@@ -121,7 +140,7 @@ function btnjuegodelahorcado(){
     encriptador.style.display = "none";
     numsecreto.style.display = "none";
     barberia.style.display = "none";
-    javaone.style.display = "none";
+    spa.style.display = "none";
     docodoo.style.display = "none";
     sisodoo.style.display = "none";
     pagmantenimiento.style.display = "none";
@@ -140,7 +159,7 @@ function btnencriptador(){
     pagmantenimiento.style.display = "none";
     numsecreto.style.display = "none";
     barberia.style.display = "none";
-    javaone.style.display = "none";
+    spa.style.display = "none";
     docodoo.style.display = "none";
     sisodoo.style.display = "none";
     pagmantenimiento.style.display = "none";
@@ -158,7 +177,7 @@ function btnnumsecreto(){
     pagmantenimiento.style.display = "none";
     numsecreto.style.display = "block";
     barberia.style.display = "none";
-    javaone.style.display = "none";
+    spa.style.display = "none";
     docodoo.style.display = "none";
     sisodoo.style.display = "none";
 
@@ -176,7 +195,25 @@ function btnbarberia(){
     pagmantenimiento.style.display = "none";
     numsecreto.style.display = "none";
     barberia.style.display = "block";
-    javaone.style.display = "none";
+    spa.style.display = "none";
+    sisodoo.style.display = "none";
+    docodoo.style.display = "none";
+    
+    secmuestra.style.display = "block";
+
+    auno.style.color = "white"
+    ados.style.color = "white"
+    atres.style.color = "white"
+    acuatro.style.color = "orange"
+}
+
+function btnspa(){
+    ahorcado.style.display = "none";
+    encriptador.style.display = "none";
+    pagmantenimiento.style.display = "none";
+    numsecreto.style.display = "none";
+    barberia.style.display = "none";
+    spa.style.display = "block";
     sisodoo.style.display = "none";
     docodoo.style.display = "none";
     

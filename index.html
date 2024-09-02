@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sergio</title>
+    <title>Sergio Martínez Meneses</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -36,19 +36,15 @@
                     <button onclick="btnExperiencia()"><h4>EXPERIENCIA</h4></button>
                     <button onclick="btnPortafolio()"><h4>PORTAFOLIO</h4></button>
                     <button onclick="btnCertificados()"><h4>CERTIFICADOS</h4></button>
-                    <button><h4>RECOMENDACIONES</h4></button>
+                    <button onclick="btnRecomendaciones()"><h4>RECOMENDACIONES</h4></button>
                     <p></p>
-                </div>
+                </div>  
                 
                 <div id="informacion">
                     <!--Sobre mi-->
                     <section id="sobre-mi">
                         <h2>
-                            Soy un profesional dedicado y atento, con una gran capacidad de aprendizaje 
-                            y una pasión por estar siempre al tanto de las nuevas tecnologías. Mi habilidad 
-                            para adaptarme rápidamente a los cambios y mi enfoque meticuloso me permiten enfrentar 
-                            desafíos con eficacia. Destaco por mi capacidad para trabajar en equipo, aportando siempre una actitud positiva 
-                            y colaborativa. Estoy comprometido con la mejora continua y la excelencia en cada proyecto que emprendo.
+                            Soy un profesional apasionado y dedicado, con una gran capacidad de aprendizaje y adaptabilidad. Me mantengo actualizado sobre las últimas tecnologías y tendencias, lo que me permite abordar desafíos con eficacia y creatividad. Mi enfoque meticuloso y atención al detalle garantizan la excelencia en cada proyecto. Valoro la colaboración y el trabajo en equipo, aportando siempre una actitud positiva y proactiva. Estoy comprometido con la mejora continua y la entrega de resultados de alta calidad
                         </h2>
                     </section>
                     <!--EXPERIENCIA-->
@@ -138,7 +134,7 @@
                                 <button onclick="btnencriptador()"><h3 ><span id="ados">*</span> Encriptador</h3></button>
                                 <button onclick="btnnumsecreto()"><h3 ><span id="atres">*</span> Juego del numero secreto</h3></button>
                                 <button onclick="btnbarberia()"><h3 ><span id="acuatro">*</span> Barberia</h3></button>
-                                <button><h3 ><span>*</span> Java one</h3></button>
+                                <button onclick="btnspa()"><h3 ><span id="acinco">*</span> SPA</h3></button>
                                 <button><h3 ><span>*</span> Documentos Odoo</h3></button>
                                 <button><h3 ><span>*</span> Sistema Odoo</h3></button>
                                 <button><h3 ><span>*</span> Servicios de mantenimiento </h3></button>
@@ -161,6 +157,10 @@
                                 <h5><a href="https://sergiommq.github.io/Barber-a-Alura-proyecto/">BARBERIA</a></h5>
                                 <img src="portafolio/barberia.png">
                             </div>
+                            <div id="spa">
+                                <h5><a href="https://sergiommq.github.io/spa/">SPA</a></h5>
+                                <img src="portafolio/spa.png">
+                            </div>
                             <div id="javaone"></div>
                             <div id="docodoo"></div>
                             <div id="sisodoo"></div>
@@ -171,11 +171,11 @@
                     <section id="certificados">
                         <button onclick="btncuno()"><h4 class="linea">SOPORTE DE TECNOLOGIAS DE LA INFORMACION DE GOOGLE </h4></button>
                             <div id="cuno">
-                                <h5>Aspectos básicos de la asistencia técnica.                30h</h5>
-                                <h5>Los bits y bytes de las redes informáticas.                 42h</h5>
-                                <h5>Sistemas operativos y tú: Convertirse en un usuario avanzado.                          42h</h5>
-                                <h5>Administración de sistemas y servicios de infraestructura de TI.                                36h</h5>
-                                <h5>Seguridad informática: defensa contra las artes oscuras digitales.                36h</h5>
+                                <h5>* Aspectos básicos de la asistencia técnica.                30h</h5>
+                                <h5>* Los bits y bytes de las redes informáticas.                 42h</h5>
+                                <h5>* Sistemas operativos y tú: Convertirse en un usuario avanzado.                          42h</h5>
+                                <h5>* Administración de sistemas y servicios de infraestructura de TI.                                36h</h5>
+                                <h5>* Seguridad informática: defensa contra las artes oscuras digitales.                36h</h5>
                             </div>
                             <div id="container">
                                 <div><img src="certificados/g1.png" alt=""></div>
@@ -187,49 +187,90 @@
                             </div>
                         <button onclick="btncdos()"><h4 class="linea">CENTRO DE CAPACITACIÓN PARA EL TRABAJO INDUSTRIAL NUM. 162</h4></button>
                             <div id="cdos">
-                                <h5>MANEJO DEL PROCESADOR DE HOJAS DE CÁLCULO                                                     100h</h5>
-                                <h5>MANEJO DEL PROCESADOR DE TEXTOS WORD                                                               120h</h5>
+                                <h5>* MANEJO DEL PROCESADOR DE HOJAS DE CÁLCULO                                                     100h</h5>
+                                <h5>* MANEJO DEL PROCESADOR DE TEXTOS WORD                                                               120h</h5>
                             </div>            
                         <button onclick="btnctres()"><h4 class="linea">CISCO NETWORKING ACADEMY</h4></button>
                             <div id="ctres">
-                                <h5>Introducción a IoT                                                            20h</h5>
-                                <h5>Get Connected                                                                  30h</h5>
-                                <h5>Introduction to Cybersecurity                                         6h</h5>
+                                <h5>* Introducción a IoT                                                            20h</h5>
+                                <h5>* Get Connected                                                                  30h</h5>
+                                <h5>* Introduction to Cybersecurity                                         6h</h5>
                             </div>
                         <button onclick="btnccuatro()"><h4 class="linea">ESCUELA DE CÓDIGO: PILARES</h4></button>
                             <div id="ccuatro">
-                                <h5>Desarrollo de Páginas Web                                             40h</h5>
-                                <h5>Pensamiento  computacional                                        30h</h5>
-                                <h5>Base de Datos                                                                      30h</h5>
-                                <h5>Python                                                                                   40h</h5>
+                                <h5>* Desarrollo de Páginas Web                                             40h</h5>
+                                <h5>* Pensamiento  computacional                                        30h</h5>
+                                <h5>* Base de Datos                                                                      30h</h5>
+                                <h5>* Python                                                                                   40h</h5>
                             </div>
                         <button onclick="btnccinco()"><h4 class="linea">COURSERA / UNAM</h4></button>
                             <div id="ccinco">
-                                <h5>RÓBOTICA            11h</h5>
+                                <h5>* RÓBOTICA            11h</h5>
                             </div>                                                                              
                         <button onclick="btncseis()"><h4 class="linea">CENTRO DE CAPACITACIÓN PARA EL TRABAJO INDUSTRIAL NUM. 162 (WINDOWS E INTERNET)</h4></button>
                             <div id="cseis">
-                                <h5>OPERAR LAS HERRAMIENTAS DE CÓMPUTO          40h</h5>
-                                <h5>PRESERVAR EL EQUIPO DE COMPUTO;  INSUMOS, INFORMACIÓN Y EL LUGAR DE TRABAJO                  30h </h5>   
-                                <h5>OPERAR LAS HERRAMIENTAS DE COMPUTO EN AMBIENTES DE RED.                                                   13h</h5>
-                                <h5>ESTABLECER COMUNICACIÓN MEDIANTE CORREO ELECTRÓNICO                                                                     37h</h5>
+                                <h5>* OPERAR LAS HERRAMIENTAS DE CÓMPUTO          40h</h5>
+                                <h5>* PRESERVAR EL EQUIPO DE COMPUTO;  INSUMOS, INFORMACIÓN Y EL LUGAR DE TRABAJO                  30h </h5>   
+                                <h5>* OPERAR LAS HERRAMIENTAS DE COMPUTO EN AMBIENTES DE RED.                                                   13h</h5>
+                                <h5>* ESTABLECER COMUNICACIÓN MEDIANTE CORREO ELECTRÓNICO                                                                     37h</h5>
                             </div>
                         <button onclick="btncsiete()"><h4 class="linea">ASOCIACIÓN MEXICANA DE EMPRESAS DEL RAMO DE INSTALACIONES PARA LA CONSTRUCCIÓN AC</h4></button>
                             <div id="csiete">
-                                <h5>TALLER EMPALMES EN CABLES DE MEDIA TENSIÓN</h5>
+                                <h5>* TALLER EMPALMES EN CABLES DE MEDIA TENSIÓN</h5>
                             </div>
                         <button onclick="btncocho()"><h4 class="linea">COPIISA OFFSHORE S.A DE C.V</h4></button>
                             <div id="cocho">
-                                <h5>Manejo de quimicos NOM-005-stps-1998, NOM-018-STPS-2015                           8h</h5>
+                                <h5>* Manejo de quimicos NOM-005-stps-1998, NOM-018-STPS-2015                           8h</h5>
                             </div>
+                    </section>
+                    <section id="recomendaciones">
+                        <div>
+                            <span>
+                                <img src="https://media.licdn.com/dms/image/v2/D4E03AQGCrGtJ8N0Reg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1691596058189?e=1730937600&v=beta&t=Dky8KrQmcmNsPDuxFI0mOPq_UHGOBAKVPT-8BVE1Ywk" alt="">
+                            </span>
+                            <article>
+                                <h4>Francisco Valentin Pichardo Torres</h4>
+                                <h6>Recomiendo ampliamente a Sergio Martínez, ya que he tenido la oportunidad de colaborar con el en varias empresas y en todas ha demostrado ser un trabajador muy eficiente que sobrepasa las expectativas. 
+
+                                    En la parte técnica como programador e ingeniero de sistemas, ha cumplido con todos los retos y objetivos que se le presentan.
+                                    
+                                    Por ultimo y no menos importante, es una persona tranquila, cordial y con la mayor disposición a ayudar a los demas.</h6>
+                            </article>
+                        </div>
+                        <div>
+                            <span>
+                                <img src="https://media.licdn.com/dms/image/v2/D4D35AQFhjke6tTpdTQ/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1631280214519?e=1725854400&v=beta&t=DJUjW34Mushr3eT_UUYIDD9Ej_OkjDVTZ_MlM6XHnS0" alt="">
+                            </span>
+                            <article>
+                                <h4>Ingrid Paulina Castillo Pérez</h4>
+                                <h6>Recomiendo a Sergio Martínez ampliamente por sus aptitudes en el área tecnológica, su facilidad para aprender y sobretodo por su calidad como persona. Es alguien comprometido con todo lo que hace y sobretodo una persona resiliente y buen compañero. Es un profesionista que constantemente busca mantenerse actualizado en el área que trabaje y siempre logra superar las expectativas.</h6>
+                            </article>
+                        </div>
+                        <div>
+                            <span>
+                                <img src="https://media.licdn.com/dms/image/v2/D4E35AQFqVi9SkkdXSQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1715362748227?e=1725858000&v=beta&t=6xuP35-AIw_1ypz-K-aTadti8bYWcMgDkct4OY6zldo" alt="">
+                            </span>
+                            <article>
+                                <h4>Jazmin Gomez</h4>
+                                <h6>Recomiendo a Sergio quien es muy profesional y responsable.
+                                    Sumamente comprometido con entregar resultados y brindar la mejor de las opciones de resolución a las dificultades que se le presenten.</h6>
+                            </article>
+                        </div>
+                        <div>
+                            <span>
+                                <img src="https://media.licdn.com/dms/image/v2/C5603AQFB7UAUrD6pWw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1659548747420?e=1730937600&v=beta&t=zTvhWW6sBbED60i6yTKpuW7H5oNDCb9zWeJoQ5CjgMc" alt="">
+                            </span>
+                            </span>
+                            <article>
+                                <h4>Yherel Mindai Dominguez Dominguez</h4>
+                                <h6>Es muy responsable, se adapta para encontrar soluciones creativas y razonables</h6>
+                            </article>
+                        </div>
                     </section>
                 </div>
             </div>
         </div>
     </main>
-    <section id="sec-muestra-dos">
-
-    </section>
     <script rel="stylesheet" src="script.js"></script>
 </body>
 </html>

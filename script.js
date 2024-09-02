@@ -1,3 +1,8 @@
+// contacto btn
+const contacto = document.querySelector('#menu-contacto')
+const contactouno = document.querySelector('#contactouno')
+const contactodos = document.querySelector('#contactodos')
+
 //menu principal
 const sobreMi = document.querySelector('#sobre-mi')
 const experiencia = document.querySelector('#experiencia')
@@ -38,6 +43,18 @@ const ados = document.querySelector('#ados')
 const atres = document.querySelector('#atres')
 const acuatro = document.querySelector('#acuatro')
 
+// menu contacto
+
+function btncontactouno(){
+    contacto.style.display = "block";
+    contactouno.style.display = "none";
+    contactodos.style.display = "block";
+}
+function btncontactodos(){
+    contacto.style.display = "none";
+    contactouno.style.display = "block";
+    contactodos.style.display = "none";
+}
 //botones menu principal
 function btnSobreMi(){
     sobreMi.style.display = "block";
